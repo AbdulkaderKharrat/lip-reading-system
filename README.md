@@ -1,5 +1,9 @@
 # LipBuddy: AI-Powered Lip Reading System
-
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![OpenCV](https://img.shields.io/badge/OpenCV-ComputerVision-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red)
+![LipBuddy Interface](screenshots/interface.png)
 
 
 LipBuddy is a deep learning-based lip reading system that converts silent lip movements into readable text.
@@ -112,7 +116,7 @@ lip-reading-system/
 
 ├── models/
 
-│   └── new\_best\_weights2.weights.h5
+│   └── new_best_weights2.weights.h5
 
 │
 
@@ -188,11 +192,23 @@ lip-reading-system/
 
 ![Prediction](screenshots/prediction.gif)
 
-
-
 ---
 
+## Results
 
+The trained LipNet-based model successfully predicts spoken words from silent video sequences by analyzing lip movements frame-by-frame.
+
+### Prediction Pipeline
+
+1. Video selection from the dataset.
+2. Mouth region extraction and preprocessing.
+3. Deep learning inference using the trained model.
+4. Token generation and decoding.
+5. Final text transcription output.
+
+This project demonstrates the practical application of Computer Vision, Deep Learning, and Sequence Modeling for visual speech recognition.
+
+---
 
 ## Installation
 
@@ -204,8 +220,7 @@ Clone the repository:
 
 ```bash
 
-git clone https://github.com/YOUR\_USERNAME/lip-reading-system.git
-
+git clone https://github.com/AbdulkaderKharrat/lip-reading-system.git
 ```
 
 
@@ -253,6 +268,18 @@ Due to dataset size and licensing limitations, the training dataset is not inclu
 ---
 
 
+## Pretrained Model
+
+A pretrained LipNet model is included in this repository:
+
+```text
+models/new_best_weights2.weights.h5
+```
+
+The model can be loaded directly by the Streamlit application for inference and demonstration purposes.
+
+---
+
 
 ## Future Improvements
 
@@ -290,3 +317,10 @@ AI & Computer Vision Developer
 
 GitHub: https://github.com/AbdulkaderKharrat
 
+
+---
+
+
+## License
+
+This project is licensed under the MIT License.
